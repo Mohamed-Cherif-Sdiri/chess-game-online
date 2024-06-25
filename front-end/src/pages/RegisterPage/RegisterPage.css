@@ -1,0 +1,173 @@
+.register-page {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+  }
+  
+  .register-info {
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .register-title h1 {
+    margin-bottom: 10px;
+    font-size: 28px; 
+  }
+  
+  .register-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%;
+  }
+  
+  .register-form-container {
+    flex: 1; 
+    padding-right: 20px; 
+    max-width: 400px; 
+  }
+  
+  .register-email,
+  .register-password {
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+  
+  .register-input-field {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; 
+  }
+  
+  .register-password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .register-password-container input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; 
+  }
+  
+  .register-toggle-password {
+    position: absolute;
+    right: 10px;
+    bottom: 20%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-toggle-password img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .condition-characters {
+    align-self: flex-start; 
+    margin-bottom: 20px;
+    font-size: 14px; 
+    color: #555;
+  }
+  
+  .register-btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .register-btn-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--btn);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    background-color: white;
+  }
+  
+  .register-btn-container button:first-child {
+    color: white;
+    background-color: var(--btn);
+  }
+  
+  .register-btn-container span {
+    font-size: 14px; 
+    color: #555;
+  }
+  
+  .register-btn-container span a {
+    text-decoration: none;
+  }
+  
+  .register-btn-container span a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .register-google-button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--btn);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    background-color: white;
+  }
+  
+  .register-google-button .register-google-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+  }
+  
+  .register-image-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-left: 20px; 
+    margin-left: auto; 
+  }
+  
+  .register-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px;
+  }
+ 
+
+
+.condition-characters.valid {
+    color: green;
+  }
+
+.condition-characters.invalid {
+    color: red;
+  }
+    

@@ -1,11 +1,11 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root{
-    --btn: #5b3c11;
-    --bg: #323232;
+    --btn: #000;
+    
 }
-body{
-    background: black;
+html{
+    font-family: "Rubik", sans-serif;
 }
 
 /* Réinitialisation des styles pour ul, li et a */

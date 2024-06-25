@@ -1,68 +1,191 @@
+/* CSS pour la page de connexion */
 
-  
- /* src/pages/LoginPage/LoginPage.css */
-.login-container {
+.login-page {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assurez-vous que le conteneur prend toute la hauteur de la fenêtre */
-    background-image: url('/home/sdiri/Desktop/chess-game-online/front-end/src/assets/images/LoginImg.png'); /* Chemin vers votre image de fond */
-    background-size: cover; /* Assurez-vous que l'image de fond couvre tout le conteneur */
-    background-position: center; /* Centrer l'image de fond */
-    background-repeat: no-repeat; /* Ne pas répéter l'image de fond */
-    background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond légèrement transparente */
-    background-color: black;
   }
   
-  .login-form {
-    width: 100%;
-    max-width: 400px; /* Fixe une largeur maximale pour le formulaire */
-    padding: 20px;
-     /* Bordure transparente */
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond transparente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optionnel: ajoute une ombre avec une transparence */
-  }
-  
-  .login-form h1 {
+  .login-info {
+    padding: 15px;
+    width: 400px;
     text-align: center;
-    margin-bottom: 20px;
-    color: rgba(0, 0, 0, 0.7); /* Texte légèrement transparent */
   }
   
-  .form-group {
-    margin-bottom: 15px;
+  .login-title h1 {
+    margin-bottom: 10px;
+    font-size: 28px; /* Augmenté à 28px pour un titre plus grand */
   }
   
-  .form-group label {
+  .login-title span {
     display: block;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px; /* Augmenté à 16px pour un texte légèrement plus grand */
+  }
+  
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-email,
+  .login-password {
+    align-self: flex-start;
     margin-bottom: 5px;
-    color: rgba(0, 0, 0, 0.7); /* Texte légèrement transparent */
   }
   
-  .form-group input {
+  .login-input-field {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-     /* Couleur de fond transparente pour les champs de saisie */
-    border: 1px solid rgba(204, 204, 204, 0.5); /* Bordure transparente pour les champs de saisie */
-    color: rgba(0, 0, 0, 0.7); /* Couleur du texte dans les champs de saisie */
+    height: 35px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; /* Couleur de fond par défaut */
   }
   
-  .btn {
+  .login-password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-password-container input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; /* Couleur de fond par défaut */
+  }
+  
+  .login-toggle-password {
+    position: absolute;
+    right: 10px;
+    bottom:  20%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-toggle-password img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .login-checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-checkbox-wrapper input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none; /* Désactive l'apparence native du checkbox */
+    -webkit-appearance: none; /* Pour les anciennes versions de Webkit */
+    -moz-appearance: none; /* Pour les anciennes versions de Firefox */
+    width: 16px; /* Taille du checkbox */
+    height: 16px; /* Taille du checkbox */
+    border: 1px solid rgba(0, 0, 0, 0.329); /* Bordure du checkbox */
+    border-radius: 3px; /* Bordure arrondie */
+    position: relative;
+    transition: all 0.3s ease; /* Transition pour un effet de changement de couleur */
+  }
+  
+  .login-checkbox-wrapper input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px; /* Ajustement de la position verticale */
+    left: 2px; /* Ajustement de la position horizontale */
+    width: 10px; /* Taille de la pseudo-checkbox */
+    height: 10px; /* Taille de la pseudo-checkbox */
+    background-color: transparent; /* Couleur de fond de la pseudo-checkbox */
+    border-radius: 2px; /* Bordure arrondie de la pseudo-checkbox */
+    transition: background-color 0.3s ease; /* Transition pour un effet de changement de couleur */
+  }
+  
+  .login-checkbox-wrapper input[type="checkbox"]:checked::before {
+    background-color: black; /* Couleur de fond de la pseudo-checkbox lorsque checked */
+  }
+  
+  .login-checkbox-container a {
+    color: var(--btn);
+    font-size: 14px; /* Augmenté à 14px pour un lien légèrement plus grand */
+    text-decoration: none;
+  }
+  
+  .login-checkbox-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .login-btn-container button {
     width: 100%;
     padding: 10px;
-    background-color: var(--btn); /* Couleur de fond transparente pour le bouton */
-    border: none;
-    color: white;
+    margin-bottom: 10px;
+    color: var(--btn);
+    border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.9;
-    transition: 1;
+    font-size: 18px; /* Augmenté à 18px pour des boutons plus grands */
+    background-color: white;
   }
   
-  .btn:hover {
+  .login-btn-container button:first-child {
+    color: white;
     background-color: var(--btn);
-    opacity: 1; /* Couleur de fond transparente pour le bouton en survol */
+  }
+  
+  .login-btn-container span {
+    font-size: 14px; /* Augmenté à 14px pour un texte légèrement plus grand sous les boutons */
+    color: #555;
+  }
+  
+  .login-btn-container span a {
+    text-decoration: none;
+  }
+  
+  .login-btn-container span a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style spécifique pour le bouton "Sign in with Google" */
+  .login-google-button {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--btn);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Augmenté à 18px pour des boutons plus grands */
+    background-color: white;
+  }
+  
+  .login-google-button .login-google-icon {
+    width: 20px; /* Ajustez la taille de l'icône selon vos besoins */
+    height: 20px; /* Ajustez la taille de l'icône selon vos besoins */
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
   }
   

@@ -1,14 +1,27 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo-img {
+    width: 85px; 
+    height: auto;
 }
 
 .navbar-title {
     margin: 0;
-    color: white;
+    font-size: 20px;
+    display: none; 
 }
 
 .navbar-links {
@@ -19,12 +32,11 @@
 }
 
 .navbar-links li {
-    margin-left: 20px;
-    transition: 0.5s;
+    margin-left: 15px;
+    transition: 0.3s;
     font-size: 16px;
-    font-weight: 600;
-    color: white;
 }
+
 .navbar-links li:hover {
     color: var(--btn);
 }
@@ -32,17 +44,17 @@
 .navbar-buttons {
     display: flex;
     align-items: center;
-    color: white;
-   
 }
 
 .navbar-button {
     margin-left: 10px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 5px;
+    font-size: 14px;
 }
+
 .navbar-button.active {
     background-color: var(--btn);
     color: white;
-  }
+}
