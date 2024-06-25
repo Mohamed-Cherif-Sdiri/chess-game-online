@@ -1,0 +1,50 @@
+
+
+:root{
+    --btn: #5b3c11;
+    --bg: #323232;
+}
+body{
+    background: black;
+}
+
+/* Réinitialisation des styles pour ul, li et a */
+
+/* Réinitialisation des marges et des rembourrages */
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Supprime les puces par défaut des listes */
+}
+
+/* Réinitialisation des styles de lien */
+a {
+    text-decoration: none; /* Supprime la décoration de texte par défaut des liens */
+    color: inherit; /* Hérite de la couleur du texte parent */
+}
+
+/* Optionnel : réinitialisation d'autres styles comme la police, la taille de police, etc. */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Réinitialisation de box-sizing pour tous les éléments */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
